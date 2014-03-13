@@ -3,7 +3,27 @@ node-rnd
 
 Node.js random string generation tool & library.
 
-## Install
+## Usage
+
+	npm install node-rnd
+
+```JavaScript
+var generated = rnd.alphas(8, 1);
+console.log(generated);
+// ['WkKzkNBP']
+
+var generated = rnd.alphasL(8, 10);
+console.log(generated);
+// ['NDYKEXQE', 'FSRZILIR', 'XXNPMKRD', 'JGITSLNE', 'NAQABWHS', 'UTXEBNHS', 'PSBKRTLU', 'RNNKNPZW', 'VXOXGONO', 'LWEAKJZN']
+
+var generated = rnd.numAlphas(5, 5);
+console.log(generated);
+// ['7z59s', 'EinxK', 'zzXeR', 'TB5We', 'xAZjY']
+
+var generated = rnd.nums(5, 5);
+console.log(generated);
+// ['22101', '60306', '62259', '67863', '92301']
+```
 
 ### Command
 
@@ -52,26 +72,3 @@ Node.js random string generation tool & library.
 	07562
 
 	$ rnd -m nums -o output.txt # Output strings will be written to file
-
-### Library
-
-
-	npm install node-rnd
-
-```JavaScript
-var generated = rnd.alphas(8, 1);
-console.log(generated);
-// ['WkKzkNBP']
-
-var generated = rnd.alphasL(8, 10);
-console.log(generated);
-// ['NDYKEXQE', 'FSRZILIR', 'XXNPMKRD', 'JGITSLNE', 'NAQABWHS', 'UTXEBNHS', 'PSBKRTLU', 'RNNKNPZW', 'VXOXGONO', 'LWEAKJZN']
-
-var generated = rnd.numAlphas(5, 5);
-console.log(generated);
-// ['7z59s', 'EinxK', 'zzXeR', 'TB5We', 'xAZjY']
-
-var generated = rnd.nums(5, 5);
-console.log(generated);
-// ['22101', '60306', '62259', '67863', '92301']
-```
