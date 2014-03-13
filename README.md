@@ -1,4 +1,5 @@
 node-rnd
 ========
 
-random generation tool
+Node.js random string generation tool & library.
+
